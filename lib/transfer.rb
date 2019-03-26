@@ -13,7 +13,7 @@ class Transfer
   end
   
   def execute_transaction
-    
+    xfer_amount = @amount
   end
   
 end
