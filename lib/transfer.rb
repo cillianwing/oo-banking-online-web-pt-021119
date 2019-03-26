@@ -1,4 +1,3 @@
-require "pry"
 class Transfer
   attr_accessor :sender, :receiver, :status, :amount
   
@@ -15,7 +14,6 @@ class Transfer
   
   def execute_transaction
     xfer_amount = @amount
-    binding.pry
   end
   
 end
