@@ -15,6 +15,7 @@ class Transfer
   def execute_transaction
     xfer_amount = @amount
     @sender.balance -= xfer_amount
+    @receiver.balance += xfer_amount
   end
   
 end
