@@ -13,9 +13,10 @@ class Transfer
   end
   
   def execute_transaction
-    xfer_amount = @amount
-    @sender.balance -= xfer_amount
-    @receiver.balance += xfer_amount
+    if self.valid? 
+      @sender.balance -= @amount 
+      @receiver.balance += @amount
+    end
   end
   
 end
