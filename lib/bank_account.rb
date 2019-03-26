@@ -14,6 +14,10 @@ class BankAccount
   
   def display_balance
     @balance 
+  end 
+  
+  def valid?
+    
   end
 
 end
